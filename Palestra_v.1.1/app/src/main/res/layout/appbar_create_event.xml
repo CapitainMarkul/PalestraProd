@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/appbar_new_event_height"
+    tools:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_new_event_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/appbar_new_event_cancel_margin_end"
+            android:src="@drawable/ic_cancel" />
+
+        <TextView
+            android:id="@+id/tv_new_event_title"
+            style="@style/mTextViewNewEventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_new_event_cancel"
+            android:text="Новое событие" />
+
+        <TextView
+            android:id="@+id/tv_new_event_next"
+            style="@style/mTextViewNewEventNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/appbar_new_event_next_margin_end"
+            android:text="Далее" />
+    </RelativeLayout>
+</Toolbar>

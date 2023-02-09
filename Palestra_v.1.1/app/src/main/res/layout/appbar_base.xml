@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_toolbar_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:elevation="0dp">
+
+    <Toolbar
+        android:id="@+id/toolbar_base"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/colorBackgroundDefault"
+        android:elevation="1dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="@android:color/holo_orange_dark">
+
+            <TextView
+                android:id="@+id/category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:textColor="@color/colorTextSelectedDefault"
+                android:textSize="15dp"
+                android:text="Категории" />
+
+            <ImageView
+                android:id="@+id/image_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_chat_24px" />
+        </RelativeLayout>
+    </Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundDefault"
+        app:tabSelectedTextColor="@color/colorTextSelectedDefault"
+        app:tabTextColor="@color/colorTextDefault">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/first_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="По дате" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/second_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Популярное" />
+    </android.support.design.widget.TabLayout>
+</android.support.design.widget.AppBarLayout>

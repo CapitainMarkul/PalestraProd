@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/frame"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_alignBottom="@+id/lin_user_info"
+        android:scaleType="fitXY"
+        android:src="@drawable/info_window_frame"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/lin_place_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/frame"
+        android:layout_alignEnd="@+id/frame"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="8dp">
+        <TextView
+            android:id="@+id/info_title_event"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:text="ДлинноеаавываываываНазвание события" />
+        <TextView
+            android:id="@+id/info_category_name"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="Категория" />
+        <TextView
+            android:id="@+id/info_window_place"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="ДлинноеаавываываываНазвание места" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/frame"
+        android:layout_alignEnd="@+id/frame"
+        android:layout_below="@+id/lin_place_info"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/avatar_mini_detail"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:paddingTop="2dp"
+            android:paddingBottom="1.5dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="1.5dp"
+            android:background="@drawable/cycle_avatar"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:id="@+id/info_window_user_name"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="17sp"
+            android:text="Виктор Тихомиров" />
+    </LinearLayout>
+</RelativeLayout>

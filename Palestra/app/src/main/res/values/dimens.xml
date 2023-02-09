@@ -1,0 +1,84 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!--<dimen name="action_bar_menu">24dp</dimen>-->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">4dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="profile_width">75dp</dimen>
+    <dimen name="profile_height">75dp</dimen>
+
+    <dimen name="width_image_on_registration_screen">150dp</dimen>
+    <dimen name="text_size_on_registration_screen">30sp</dimen>
+    <dimen name="confidencial_text_size_on_registration_screen">17sp</dimen>
+    <dimen name="margin_button_on_registration_screen">10dp</dimen>
+    <dimen name="margin_bottom_registration_screen">20dp</dimen>
+    <dimen name="radius_for_button_on_registration_screen">20dp</dimen>
+    <dimen name="radius_for_edit_text_on_registration_screen">7dp</dimen>
+    <dimen name="stroke">2dp</dimen>
+
+    <dimen name="relative_layout_padding_start_end">10dp</dimen>
+
+    <dimen name="input_screen_img_margin_start_end">40dp</dimen>
+    <dimen name="input_screen_img_margin_top">      20dp</dimen>
+    <dimen name="input_screen_img_margin_bottom">   5dp</dimen>
+    <dimen name="input_screen_tv_margin_bottom">    20dp</dimen>
+    <dimen name="input_screen_tv_margin_start_end"> 10dp</dimen>
+    <dimen name="input_screen_bt_margin_start_end"> 30dp</dimen>
+    <dimen name="input_screen_bt_margin_bottom">    50dp</dimen>
+
+    <dimen name="registration_step_tv_start_end">   10dp</dimen>
+    <dimen name="registration_step_tv_bottom">      20dp</dimen>
+
+    <dimen name="welcome_screen_img_logo_margin_start_end"> 15dp</dimen>
+    <dimen name="welcome_screen_img_logo_margin_top">       40dp</dimen>
+    <dimen name="welcome_screen_img_logo_margin_bottom">    30dp</dimen>
+    <dimen name="welcome_screen_img_margin_start_end">      10dp</dimen>
+    <dimen name="welcome_screen_img_margin_bottom">         50dp</dimen>
+    <dimen name="welcome_screen_img_margin_top">            10dp</dimen>
+    <dimen name="welcome_screen_fl_margin_bottom">          50dp</dimen>
+
+    <dimen name="welcome_screen_dot_margin">                20dp</dimen>
+    <dimen name="welcome_screen_dot_margin_bottom">         20dp</dimen>
+    <dimen name="welcome_screen_dot_size_active">           7sp</dimen>
+    <dimen name="welcome_screen_dot_size_inactive">         5sp</dimen>
+
+    <dimen name="welcome_screen_tv_title_font_size">        17sp</dimen>
+    <dimen name="welcome_screen_tv_below_title_font_size">  13sp</dimen>
+
+    <dimen name="item_card_height_card">            220dp</dimen>
+    <dimen name="item_card_ll_margin_top">          10dp</dimen>
+    <dimen name="item_card_size_text_name_event">   20sp</dimen>
+    <dimen name="item_card_size_text_brief_info">   12sp</dimen>
+    <dimen name="item_card_size_text_category">     10sp</dimen>
+    <dimen name="item_card_size_text_user_name">    10sp</dimen>
+
+    <dimen name="detail_info_size_text_title_event">20sp</dimen>
+    <dimen name="detail_info_size_text_brief_info"> 12sp</dimen>
+    <dimen name="detail_info_size_text_date_time">  11sp</dimen>
+    <dimen name="detail_info_size_text_count">      14sp</dimen>
+    <dimen name="detail_info_width_space_start_end">7dp</dimen>
+
+    <dimen name="create_new_event_size_text">                 15sp</dimen>
+
+    <dimen name="card_height">304dp</dimen>
+    <dimen name="md_keylines">16dp</dimen>
+    <dimen name="tile_padding">8dp</dimen>
+    <dimen name="tile_height">160dp</dimen>
+    <dimen name="app_bar_height">256dp</dimen>
+    <dimen name="article_keylines">72dp</dimen>
+    <dimen name="avator_size">40dp</dimen>
+    <dimen name="card_title_height">40dp</dimen>
+    <dimen name="article_titles">20sp</dimen>
+    <dimen name="cards_button_width">48dp</dimen>
+    <dimen name="cards_button_height">48dp</dimen>
+    <dimen name="article_subheading">16sp</dimen>
+    <dimen name="card_image_height">200dp</dimen>
+    <dimen name="list_body">14sp</dimen>
+    <dimen name="navheader_height">222dp</dimen>
+</resources>

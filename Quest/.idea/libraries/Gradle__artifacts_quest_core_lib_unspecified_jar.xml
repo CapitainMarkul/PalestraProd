@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:quest-core-lib:unspecified@jar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/quest-core-lib/build/.transforms/c34f7a0c37a806eae4c80c0af117f3ee/quest-core-lib-release/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/quest-core-lib/build/.transforms/c34f7a0c37a806eae4c80c0af117f3ee/quest-core-lib-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/quest-core-lib/build/.transforms/c34f7a0c37a806eae4c80c0af117f3ee/quest-core-lib-release/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

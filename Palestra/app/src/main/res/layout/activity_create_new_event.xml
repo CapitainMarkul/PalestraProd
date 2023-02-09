@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_create_new_event"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light"
+    android:paddingBottom="5dp">
+    <!--TODO:какая то херня со статус баром-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/top"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@color/blue_dark"/>-->
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/button_back_create_event"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/ic_back_next"
+            android:rotation="180"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Новое событие"
+            android:textStyle="bold"
+            android:textColor="@color/hint"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_name_event"
+        android:layout_below="@+id/rel_title"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/input_screen_tv_margin_start_end"
+        android:layout_marginEnd="@dimen/input_screen_tv_margin_start_end">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_name_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyTextLabel">
+            <EditText
+                android:id="@+id/et_event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Название"
+                android:gravity="center"
+                android:maxLength="42"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:textSize="20sp"
+                android:text=""
+                android:textColor="@color/hint"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyTextLabel"
+            >
+            <EditText
+                android:id="@+id/et_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Описание"
+                android:gravity="center"
+                android:maxLength="54"
+                android:textSize="@dimen/create_new_event_size_text"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:text=""
+                android:textColor="@color/hint"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_date"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_name_event"
+        android:layout_marginStart="@dimen/input_screen_tv_margin_start_end">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_set_date"
+                android:text="Когда планируете начать:"
+                android:textColor="@color/hint"
+                android:textSize="@dimen/create_new_event_size_text"/>
+            <!--android:layout_centerInParent="true"-->
+            <TextView
+                android:id="@+id/tv_set_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_above="@+id/tv_when_event"
+                android:text="@string/set_date"
+                android:gravity="center"
+                android:textColor="@color/hint"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_weight="0.5"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hint"
+                android:text="Категория события:"
+                android:textSize="@dimen/create_new_event_size_text"/>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/mySpinnerItemStyle"
+                android:popupBackground="@color/blue_light">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hint"
+                android:text="Возрастное ограничение:"
+                android:textSize="@dimen/create_new_event_size_text"/>
+            <EditText
+                android:id="@+id/et_age_limit"
+                android:text="12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:maxLength="2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:theme="@style/MyTextLabel"
+                android:textColor="@color/hint"
+                android:inputType="number" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hint"
+                android:textStyle="bold"
+                android:textSize="@dimen/create_new_event_size_text"
+                android:text="+"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_when_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="@dimen/create_new_event_size_text"
+            android:layout_weight="0.1"
+            android:text="Где планируется встреча ?"
+            android:textColor="@color/hint"/>
+    </LinearLayout>
+
+
+
+    <!--&lt;!&ndash;android:id="@+id/tv_when_start"&ndash;&gt;-->
+    <!--<TextView-->
+        <!---->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/tv_set_date"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Когда планируете начать ?"-->
+        <!--android:textColor="@color/hint"/>-->
+
+    <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:id="@+id/tv_set_date"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <!--android:layout_above="@+id/tv_when_event"-->
+        <!--android:text="@string/set_date"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/hint"/>-->
+
+    <TextView
+        android:id="@+id/tv_geo_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="@dimen/create_new_event_size_text"
+        android:text="Место встречи..."
+        android:layout_below="@+id/lin_date"
+        android:textAlignment="center"
+        android:textColor="@color/hint"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_geo_message"
+        android:layout_above="@+id/button_create_event"
+        android:gravity="center">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/button_create_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/lin_name_event"
+        android:layout_alignEnd="@+id/lin_name_event"
+        android:src="@drawable/button_shape" />
+
+    <TextView
+        android:id="@+id/tv_create_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_create_event"
+        android:layout_alignTop="@+id/button_create_event"
+        android:layout_alignEnd="@+id/button_create_event"
+        android:layout_alignBottom="@+id/button_create_event"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:text="Создать событие  +"
+        android:textStyle="normal|bold" />
+</RelativeLayout>

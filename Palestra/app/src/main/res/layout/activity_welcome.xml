@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="25dp"
+    android:paddingEnd="25dp"
+    android:background="@drawable/background_input">
+
+    <ImageView
+        android:id="@+id/logo_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_input"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="@dimen/welcome_screen_img_logo_margin_start_end"
+        android:layout_marginEnd="@dimen/welcome_screen_img_logo_margin_start_end"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"/>
+
+    <FrameLayout
+        android:id="@+id/contentWelcomeSlider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_input"
+        android:layout_above="@+id/layoutDots">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_login"
+        android:gravity="center"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/button_shape"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_login"
+        android:layout_alignTop="@+id/button_login"
+        android:layout_alignRight="@+id/button_login"
+        android:layout_alignBottom="@+id/button_login"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="@string/login"
+        android:textStyle="normal|bold" />
+</RelativeLayout>

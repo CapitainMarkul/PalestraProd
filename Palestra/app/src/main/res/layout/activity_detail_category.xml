@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_datail_category">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.55">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            tools:background="@color/Teal_500">
+            <ImageView
+                android:id="@+id/detail_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="35dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+                <ImageView
+                    android:id="@+id/button_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back_next"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp"
+                    android:rotation="180"
+                    android:layout_alignParentStart="true" />
+                <Space
+                    android:id="@+id/space_start"
+                    android:layout_width="@dimen/detail_info_width_space_start_end"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/button_back"
+                    android:layout_alignParentStart="true" />
+                <Space
+                    android:id="@+id/space_end"
+                    android:layout_width="@dimen/detail_info_width_space_start_end"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/button_back"
+                    android:layout_alignParentEnd="true"/>
+                <TextView
+                    android:id="@+id/item_detail_tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/space_start"
+                    android:layout_toStartOf="@+id/space_end"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/detail_info_size_text_title_event"
+                    android:text="Собираю людей для игры\n в баскетбол"
+                    android:textColor="@color/hint" />
+
+                <TextView
+                    android:id="@+id/item_detail_tv_brief_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Не хватает 4х человек.\nКто умеет кидать мячик в кольцо - откликнитесь."
+                    android:gravity="center"
+                    android:textSize="@dimen/detail_info_size_text_brief_info"
+                    android:textColor="@color/hint"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@+id/space_start"
+                    android:layout_toStartOf="@+id/space_end"
+                    android:layout_below="@+id/item_detail_tv_title"
+                    android:layout_above="@+id/space"/>
+
+                <Space
+                    android:id="@+id/space"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:id="@+id/button_will_go"
+                    android:layout_below="@+id/space"
+                    android:layout_width="match_parent"
+                    android:layout_toEndOf="@+id/space_start"
+                    android:layout_toStartOf="@+id/space_end"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/button_shape"/>
+
+                <TextView
+                    android:id="@+id/tv_will_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/button_will_go"
+                    android:layout_alignTop="@+id/button_will_go"
+                    android:layout_alignRight="@+id/button_will_go"
+                    android:layout_alignBottom="@+id/button_will_go"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/will_go"
+                    android:textStyle="normal|bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/button_will_go"
+                    android:layout_alignStart="@+id/button_will_go"
+                    android:layout_alignEnd="@+id/button_will_go"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_clock"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/item_detail_tv_date_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:text="Ноябрь 12. 2017 10:45"
+                        android:textSize="@dimen/detail_info_size_text_date_time"
+                        android:textColor="@color/hint"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end|center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_blank_eye"
+                            android:layout_marginEnd="5dp"/>
+                        <TextView
+                            android:id="@+id/item_detail_tv_count_review"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/detail_info_size_text_count"
+                            android:text="20"
+                            android:textColor="@color/hint"/>
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/ic_happy_children"/>
+                        <TextView
+                            android:id="@+id/item_detail_tv_count_participant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:textSize="@dimen/detail_info_size_text_count"
+                            android:textColor="@color/hint"/>
+                        <ImageView
+                            android:id="@+id/iv_trash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_waste_bin"
+                            android:layout_marginStart="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".4"
+        android:gravity="center">
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mapViewDetailInfo"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            map:mapType="normal">
+        </fragment>
+    </LinearLayout>
+</LinearLayout>

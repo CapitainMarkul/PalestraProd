@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="deadlock_task">Тупик</string>
+    <string name="direction_task">Иди направо</string>
+    <string name="number_task">Вернись назад, пойди налево и найди код, чтобы пройти дальше</string>
+    <string name="text_task">Введи название компании, проводящей контест, на английском</string>
+</resources>

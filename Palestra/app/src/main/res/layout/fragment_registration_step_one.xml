@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_registration_screen"
+        android:layout_above="@+id/til_first_name_registration"
+        android:text="@string/welcome"
+        android:theme="@style/TextViewRegistrationScreen"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_first_name_registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edit_text_registration_screen_top"
+        android:theme="@style/MyTextLabel">
+        <EditText
+            android:id="@+id/user_first_name_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:maxLength="50"
+            android:inputType="textPersonName"
+            android:textColor="@color/Teal_50" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/til_first_name_registration"
+        android:background="@drawable/edit_text_registration_screen_bottom"
+        android:theme="@style/MyTextLabel">
+        <EditText
+            android:id="@+id/user_second_name_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/second_name"
+            android:maxLength="50"
+            android:inputType="textPersonName"
+            android:textColor="@color/Teal_50" />
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>

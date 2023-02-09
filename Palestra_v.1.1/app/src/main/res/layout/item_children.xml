@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_children_height"
+    android:background="@android:color/holo_orange_dark"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/item_children_root_padding_top">
+
+    <LinearLayout
+        android:id="@+id/ln_container_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_children_root_padding_start"
+        android:gravity="start|center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_clock" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_date_event"
+            style="@style/mTextViewDetailInfoEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01-25-2017" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_container_viewers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ln_container_datetime"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ln_container_datetime"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/item_children_root_padding_end"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_eye" />
+
+        <Space
+            android:layout_width="9dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_count_review"
+            style="@style/mTextViewDetailInfoEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1132" />
+
+        <Space
+            android:layout_width="21dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_people" />
+
+        <Space
+            android:layout_width="9dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_count_participant"
+            style="@style/mTextViewDetailInfoEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="753" />
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mv_place_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ln_container_datetime"
+        android:layout_marginBottom="@dimen/item_children_map_padding_top"
+        android:layout_marginTop="@dimen/item_children_map_padding_top"
+        android:background="@android:color/darker_gray"
+        map:mapType="normal" />
+</RelativeLayout>

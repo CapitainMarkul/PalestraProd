@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Palestra</string>
+
+    <string name="welcome">Здравствуйте, как Вас зовут?</string>
+    <string name="name">Имя</string>
+    <string name="second_name">Фамилия</string>
+    <string name="phone">Номер телефона</string>
+    <string name="age">Возраст</string>
+    <string name="congratulation">Благодарим за регистрацию!</string>
+    <string name="next_step">Далее</string>
+    <string name="your_phone_number">Какой у Вас номер телефона?</string>
+    <string name="your_age">Когда Вы родились?</string>
+    <string name="your_password">Осталось придумать пароль...</string>
+    <string name="confidencial">Не волнуйтесь, эти данные всегда будут скрыты.</string>
+    <string name="online">Онлайн</string>
+
+    <string name="set_date"><u>Указать дату</u></string>
+
+    <string name="user_name">Номер телефона</string>
+    <string name="user_password">Пароль</string>
+    <string name="repeat_user_password">Повторите пароль</string>
+    <string name="login"><b>Войти &#8195;&#9658;</b></string>
+    <string name="will_go">Пойду!</string>
+    <string name="will_go_yes">Вы подписались на событие</string>
+    <string name="will_go_creator">Вы создатель события</string>
+    <string name="registration"><b>Регистрация</b></string>
+    <string name="non_account">У вас нет аккаунта?</string>
+    <string name="registration_input"><u>Зарегистрируйтесь</u></string>
+    <string name="registration_yes">Зарегистрироваться</string>
+    <string name="rules_first">Вы соглашаетесь на все</string>
+    <string name="rules_second"><u>правила</u></string>
+    <string name="rules_third">приложения.</string>
+    <string name="registration_next">Продолжить &#8195;&#9658;</string>
+    <string name="title_activity_menu">ActivityMenu</string>
+
+    <string name="events_all">Все события</string>
+    <string name="events">Мои события</string>
+    <string name="events_future">Запланированные</string>
+    <string name="events_past">Завершенные</string>
+    <string name="events_my_city">Мой город</string>
+    <string name="create_event">Создать событие</string>
+    <string name="setting">Настройки</string>
+
+    <string name="card">Карточки</string>
+    <string name="map">Карта</string>
+
+    <string name="welcome_card_title_first"><b>Привет. Я Palestra.\nЯ площадка для встреч.</b></string>
+    <string name="welcome_card_below_title_first">Изучайте новые места, общайтесь с другими\nпользователями, создавайте свои события.</string>
+
+
+
+
+
+
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="drawer_item_home">Home</string>
+    <string name="drawer_item_free_play">Free Play</string>
+    <string name="drawer_item_custom">Custom</string>
+    <string name="drawer_item_settings">Settings</string>
+    <string name="drawer_item_help">Help</string>
+    <string name="drawer_item_open_source">Open Source</string>
+    <string name="drawer_item_contact">Contact</string>
+
+    <string name="item_desc">The Palais Garnier which locates in Paris was built from 1861 for
+        the Paris Opera.
+    </string>
+    <string name="detail_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
+    </string>
+    <string name="detail_location">"8 Rue Scribe, 75009 Paris, France"</string>
+</resources>

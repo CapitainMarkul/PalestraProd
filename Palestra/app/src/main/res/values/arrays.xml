@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item>Исскуство</item>
+        <item>Кулинария</item>
+        <item>Литература</item>
+        <item>Развлечение</item>
+        <item>Спорт</item>
+        <item>Танцы</item>
+        <item>Мастеркласс</item>
+        <item>Фокусы</item>
+        <item>Автомобили</item>
+        <item>Праздники</item>
+        <item>Путешествия</item>
+        <item>Книги</item>
+        <item>Образование</item>
+        <item>Знакомства</item>
+        <item>Выставка</item>
+        <item>Помощь</item>
+        <item>Праздник</item>
+    </string-array>
+
+    <!--<integer-array name="id_category">-->
+        <!--<item>1</item>-->
+        <!--<item>2</item>-->
+        <!--<item>3</item>-->
+        <!--<item>4</item>-->
+        <!--<item>5</item>-->
+    <!--</integer-array>-->
+
+    <!--<array name="category_picture">-->
+        <!--<item>@drawable/yellow</item>-->
+        <!--<item>@drawable/dark_fiol</item> &lt;!&ndash;Исскуство&ndash;&gt;-->
+        <!--<item>@drawable/background_input</item> &lt;!&ndash;Кулинария&ndash;&gt;-->
+        <!--<item>@drawable/pink</item> &lt;!&ndash;Литература&ndash;&gt;-->
+        <!--<item>@drawable/fiol</item> &lt;!&ndash;Развлечение&ndash;&gt;-->
+        <!--<item>@drawable/green</item> &lt;!&ndash;Спорт&ndash;&gt;-->
+        <!--<item>@drawable/dark_fiol</item> &lt;!&ndash;Танцы&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<item>@drawable/gradf_second</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item>@drawable/gradf</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item>@drawable/gradf_second</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item>@drawable/gradf</item>&ndash;&gt;-->
+    <!--</array>-->
+
+    <!--<array name="category_random_picture">-->
+        <!--<item>@drawable/pink</item> &lt;!&ndash;Литература&ndash;&gt;-->
+        <!--<item>@drawable/rand_one</item>-->
+        <!--<item>@drawable/rand_two</item>-->
+        <!--<item>@drawable/rand_three</item>-->
+        <!--<item>@drawable/rand_four</item>-->
+        <!--<item>@drawable/rand_five</item>-->
+        <!--<item>@drawable/rand_six</item>-->
+        <!--<item>@drawable/rand_seven</item>-->
+        <!--<item>@drawable/rand_eight</item>-->
+        <!--<item>@drawable/rand_nine</item>-->
+        <!--<item>@drawable/rand_ten</item>-->
+        <!--<item>@drawable/rand_eleven</item>-->
+        <!--<item>@drawable/rand_twelve</item>-->
+    <!--</array>-->
+
+    <!--<string-array name="temp_name_events">-->
+        <!--<item>Собираю людей для игры\nв баскетбол</item>-->
+        <!--<item>Встреча фанатов Гарри Потера\nдля совместного чтения</item>-->
+        <!--<item>Библиотека. Жду всех</item>-->
+        <!--<item>&#45;&#45;&#45;&#45;</item>-->
+        <!--<item>&#45;&#45;&#45;&#45;</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="temp_brief">-->
+        <!--<item>Не хватает 4х человек\nКто умеет кидать мяч в кольцо - откликнитесь.</item>-->
+        <!--<item>Не хватает 4х человек\nКто умеет кидать мяч в кольцо - откликнитесь.</item>-->
+        <!--<item>Не хватает 4х человек\nКто умеет кидать мяч в кольцо - откликнитесь.</item>-->
+        <!--<item>&#45;&#45;&#45;&#45;</item>-->
+        <!--<item>&#45;&#45;&#45;&#45;</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="temp_user_name">-->
+        <!--<item>Виктор Тихомиров</item>-->
+        <!--<item>Павлов Дмитрий</item>-->
+        <!--<item>Кашникова Любовь</item>-->
+        <!--<item>Кто-то еще</item>-->
+        <!--<item>И еще</item>-->
+    <!--</string-array>-->
+</resources>

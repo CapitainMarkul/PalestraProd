@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/Teal_500"
+    >
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_marginBottom="@dimen/margin_bottom_registration_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/center_layout"
+        android:text="@string/your_phone_number"
+        android:theme="@style/TextViewRegistrationScreen" />
+<ProgressBar
+    android:id="@+id/progressBarPhoneCheck"
+    android:layout_centerInParent="true"
+    android:layout_width="50dp"
+    android:layout_height="50dp" />
+    <!--<TextView-->
+        <!--android:id="@+id/textViewConfidencial"-->
+        <!--android:layout_marginStart="@dimen/margin_login_screen"-->
+        <!--android:layout_marginEnd="@dimen/margin_login_screen"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/user_phone_registration"-->
+        <!--android:text="@string/confidencial"-->
+        <!--android:textSize="@dimen/confidencial_text_size_on_registration_screen"-->
+        <!--android:theme="@style/TextViewRegistrationScreen" />-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edit_text_registration_screen_middle"
+        android:theme="@style/MyTextLabel">
+        <EditText
+            android:id="@+id/user_phone_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:maxLength="12"
+            android:inputType="phone"
+            android:textColor="@color/hint" />
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>

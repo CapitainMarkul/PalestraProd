@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_all_events"
+            android:title="@string/events_all"/>
+        <item
+            android:id="@+id/menu_future_events"
+            android:title="@string/events_future" />
+        <item
+            android:id="@+id/menu_info_about_user"
+            android:title="Мой статус" />
+        <!--<item-->
+            <!--android:id="@+id/menu_past_events"-->
+            <!--android:title="@string/events_past" />-->
+        <!--<item-->
+            <!--android:id="@+id/menu_my_city_events"-->
+            <!--android:title="@string/events_my_city" />-->
+    </group>
+
+    <!-- menu group -->
+    <group android:id="@+id/group_setting">
+        <!--<item-->
+            <!--android:id="@+id/menu_setting"-->
+            <!--android:title="@string/setting" />-->
+        <item
+            android:id="@+id/menu_exit"
+            android:title="Выйти" />
+    </group>
+
+    <!--<item android:title="">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/menu_setting"-->
+                <!--android:title="@string/setting" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/Teal_500"
+    >
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_marginBottom="@dimen/margin_bottom_registration_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/autocompleteText"
+        android:text="Ваш город ?"
+        android:theme="@style/TextViewRegistrationScreen" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autocompleteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_registration_screen_middle"
+        android:hint="Название города"
+        android:textColor="@color/hint"
+        android:textColorHint="@color/hint"/>
+</RelativeLayout>

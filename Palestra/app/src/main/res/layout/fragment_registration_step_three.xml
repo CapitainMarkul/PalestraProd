@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_marginBottom="@dimen/margin_bottom_registration_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/center_layout"
+        android:text="@string/your_age"
+        android:theme="@style/TextViewRegistrationScreen" />
+
+        <TextView
+            android:id="@+id/center_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:background="@drawable/edit_text_registration_screen_middle"
+            android:text="Указать..."
+            android:textColor="@color/Teal_50" />
+</RelativeLayout>
